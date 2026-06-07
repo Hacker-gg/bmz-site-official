@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Галерея — БМЗ</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="ld" id="loader"><div class="ldl">БМЗ</div><div class="ldb"></div></div>
+<header class="hdr" id="header">
+<div class="hi">
+<a href="index.html" class="logo">
+<img src="logo.svg" alt="БМЗ Логотип" class="logo-img">
+<div class="lt">Белорусский металлургический завод<span>Управляющая компания холдинга «БМК»</span></div>
+</a>
+<nav class="nav" id="nav">
+<a href="index.html" class="nl" data-p="home">Главная</a>
+<a href="about.html" class="nl" data-p="about">О заводе</a>
+<a href="production.html" class="nl" data-p="production">Производство</a>
+<a href="gallery.html" class="nl a" data-p="gallery">Галерея</a>
+<a href="contacts.html" class="nl" data-p="contacts">Контакты</a>
+</nav>
+<button class="mmb" id="mmb" onclick="tmm()">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+<main>
+<section class="gah">
+<div class="c">
+<h1>Галерея</h1>
+<p>Фотографии производственных мощностей, продукции и жизни коллектива БМЗ</p>
+</div>
+</section>
+<section class="sec">
+<div class="c">
+<h2 class="st aos">Фотогалерея предприятия</h2>
+<p class="ss aos d1">Визуальная история завода и его продукции</p>
+<div class="gf">
+<button class="fb a" data-f="all" onclick="filterGallery('all')">Все</button>
+<button class="fb" data-f="production" onclick="filterGallery('production')">Производство</button>
+<button class="fb" data-f="products" onclick="filterGallery('products')">Продукция</button>
+<button class="fb" data-f="team" onclick="filterGallery('team')">Коллектив</button>
+</div>
+<div class="gg" id="galleryGrid">
+<div class="gi w aos" data-cat="production" onclick="openLightbox(0)">
+<img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/3bd464f20161b29b70ec994d1ea81ff3f4a05098.jpg" alt="Сталеплавильное производство БМЗ">
+<div class="go">
+<div class="gc2">Производство</div>
+<div class="gt">Электросталеплавильный цех</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi aos" data-cat="products" onclick="openLightbox(1)">
+<img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/1b91da4d20f405554c29ea3b6e2125a6cb24dcb9.jpg" alt="Сортовой прокат БМЗ">
+<div class="go">
+<div class="gc2">Продукция</div>
+<div class="gt">Сортовой прокат</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi t aos" data-cat="production" onclick="openLightbox(2)">
+<img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/2d1bb19889d8f1b13a5571e24a045ef060aaebd0.jpg" alt="Производство стали БМЗ">
+<div class="go">
+<div class="gc2">Производство</div>
+<div class="gt">Машина непрерывного литья</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi aos" data-cat="products" onclick="openLightbox(3)">
+<img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/9ec790e2377c13329f7f2a36cd2191cc7166b881.jpg" alt="Бесшовные трубы БМЗ">
+<div class="go">
+<div class="gc2">Продукция</div>
+<div class="gt">Бесшовные трубы</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi w aos" data-cat="team" onclick="openLightbox(4)">
+<img src="https://kimi-web-img.moonshot.cn/img/hardhub.ru/dfd3815d4661ed58b0b5298e0399d7415b904d4f.jpg" alt="БМЗ Жлобин вид на завод">
+<div class="go">
+<div class="gc2">Коллектив</div>
+<div class="gt">Вид на завод с высоты</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi aos" data-cat="production" onclick="openLightbox(5)">
+<img src="https://kimi-web-img.moonshot.cn/img/avatars.mds.yandex.net/ea0284dd942a76adbab34ed04d3b20f6d740dc55" alt="Трубопрокатный цех БМЗ">
+<div class="go">
+<div class="gc2">Производство</div>
+<div class="gt">Трубопрокатный цех</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi aos" data-cat="products" onclick="openLightbox(6)">
+<img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/738c48a3a021769e08a189b69f442a0ebe51e384.jpg" alt="Металлокорд БМЗ">
+<div class="go">
+<div class="gc2">Продукция</div>
+<div class="gt">Металлокорд</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi aos" data-cat="team" onclick="openLightbox(7)">
+<img src="https://kimi-web-img.moonshot.cn/img/tnp.belsteel.com/19be3f556a5e931bff9d1899451e18f740fb1033.jpg" alt="Панорама БМЗ Жлобин">
+<div class="go">
+<div class="gc2">Коллектив</div>
+<div class="gt">Панорама завода</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi aos" data-cat="production" onclick="openLightbox(8)">
+<img src="https://kimi-web-img.moonshot.cn/img/vivascale.by/4c07c0c78264ca7dc3410c9586dc0318b55112e9.jpg" alt="Макет БМЗ Жлобин">
+<div class="go">
+<div class="gc2">Производство</div>
+<div class="gt">Макет завода 1:1000</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="ftr">
+<div class="c">
+<div class="fg3">
+<div class="fbi">
+<a href="index.html" class="logo">
+<img src="logo.svg" alt="БМЗ Логотип" class="logo-img">
+<div class="lt">Белорусский металлургический завод<span>Управляющая компания холдинга «БМК»</span></div>
+</a>
+<p class="fds">Одно из крупнейших металлургических предприятий Восточной Европы. Производство стали, проката, труб и метизной продукции с 1984 года.</p>
+</div>
+<div>
+<h4 class="ft3">Навигация</h4>
+<ul class="fls">
+<li><a href="index.html">Главная</a></li>
+<li><a href="about.html">О заводе</a></li>
+<li><a href="production.html">Производство</a></li>
+<li><a href="gallery.html">Галерея</a></li>
+<li><a href="contacts.html">Контакты</a></li>
+</ul>
+</div>
+<div>
+<h4 class="ft3">Продукция</h4>
+<ul class="fls">
+<li><a href="production.html">Сортовой прокат</a></li>
+<li><a href="production.html">Бесшовные трубы</a></li>
+<li><a href="production.html">Металлокорд</a></li>
+<li><a href="production.html">Катанка</a></li>
+<li><a href="production.html">Стальная фибра</a></li>
+</ul>
+</div>
+<div>
+<h4 class="ft3">Контакты</h4>
+<div class="fcp">
+<p><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>г. Жлобин, ул. Промышленная, 37</p>
+<p><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+375 (2334) 2-29-93</p>
+<p><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@belsteel.com</p>
+</div>
+</div>
+</div>
+<div class="fbt">
+<p class="fcpy">© 2026 ОАО «БМЗ — управляющая компания холдинга «БМК». Все права защищены.</p>
+<div class="fsoc">
+<a href="#" class="soc" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+<a href="#" class="soc" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+<a href="#" class="soc" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+</div>
+</div>
+</div>
+</footer>
+
+<button class="stp" id="scrollTop" onclick="scrollToTop()">
+<svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

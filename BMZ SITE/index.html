@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>БМЗ — Белорусский металлургический завод</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="ld" id="loader"><div class="ldl">БМЗ</div><div class="ldb"></div></div>
+<header class="hdr" id="header">
+<div class="hi">
+<a href="index.html" class="logo">
+<img src="logo.svg" alt="БМЗ Логотип" class="logo-img">
+<div class="lt">Белорусский металлургический завод<span>Управляющая компания холдинга «БМК»</span></div>
+</a>
+<nav class="nav" id="nav">
+<a href="index.html" class="nl a" data-p="home">Главная</a>
+<a href="about.html" class="nl" data-p="about">О заводе</a>
+<a href="production.html" class="nl" data-p="production">Производство</a>
+<a href="gallery.html" class="nl" data-p="gallery">Галерея</a>
+<a href="contacts.html" class="nl" data-p="contacts">Контакты</a>
+</nav>
+<button class="mmb" id="mmb" onclick="tmm()">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="hbg"></div>
+<div class="hc">
+<div class="hbd">Ведущий металлургический завод Беларуси</div>
+<h1 class="ht">Сталь<br><span class="ac">высшего качества</span></h1>
+<p class="hd">Белорусский металлургический завод — флагман отечественной металлургии. С 1984 года мы производим продукцию мирового уровня для строительства, машиностроения, нефтегазовой и автомобильной промышленности.</p>
+<div class="hb">
+<button class="hbtn hbtn-p" onclick="nav('production')">Наша продукция</button>
+<button class="hbtn hbtn-s" onclick="nav('contacts')">Связаться с нами</button>
+</div>
+</div>
+<div class="hs">
+<div class="hsi">
+<div class="si"><span class="sn" data-c="40">0</span><div class="sl">Лет на рынке</div></div>
+<div class="si"><span class="sn" data-c="2500">0</span><div class="sl">Тонн продукции в день</div></div>
+<div class="si"><span class="sn" data-c="50">0</span><div class="sl">Стран экспорта</div></div>
+<div class="si"><span class="sn" data-c="8500">0</span><div class="sl">Сотрудников</div></div>
+</div>
+</div>
+</section>
+
+<section class="sec fea">
+<div class="c">
+<h2 class="st aos">Наши преимущества</h2>
+<p class="ss aos d1">Современные технологии, экологичное производство и неизменно высокое качество</p>
+<div class="fg">
+<div class="fc aos d1">
+<div class="fi"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+<h3 class="ft">Полный цикл производства</h3>
+<p class="fd">От переработки металлолома до готовой продукции: сталеплавильное, прокатное, трубное и метизное производство на одной площадке.</p>
+</div>
+<div class="fc aos d2">
+<div class="fi"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<h3 class="ft">Высокие стандарты качества</h3>
+<p class="fd">Сертификация по ISO 9001, ISO 14001, ISO 45001. Продукция соответствует международным стандартам API, ASTM, EN и ГОСТ.</p>
+</div>
+<div class="fc aos d3">
+<div class="fi"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+<h3 class="ft">Экологичное производство</h3>
+<p class="fd">Современные системы очистки выбросов, замкнутый цикл водооборота, переработка отходов. Завод — лидер экологической ответственности.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec np">
+<div class="c">
+<h2 class="st aos">Новости и события</h2>
+<p class="ss aos d1">Актуальная информация о жизни предприятия</p>
+<div class="ng">
+<div class="nc aos d1">
+<div class="ni"><img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/3bd464f20161b29b70ec994d1ea81ff3f4a05098.jpg" alt="Сталеплавильное производство БМЗ"><div class="nd">15 мая 2026</div></div>
+<div class="nct">
+<div class="ntg">Производство</div>
+<h3 class="nt">Модернизация трубопрокатного цеха</h3>
+<p class="ne">Завершена очередная модернизация оборудования трубопрокатного цеха, позволяющая увеличить производительность на 15%.</p>
+</div>
+</div>
+<div class="nc aos d2">
+<div class="ni"><img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/9ec790e2377c13329f7f2a36cd2191cc7166b881.jpg" alt="Бесшовные трубы БМЗ"><div class="nd">28 апреля 2026</div></div>
+<div class="nct">
+<div class="ntg">Экспорт</div>
+<h3 class="nt">Новые контракты в ЕС и СНГ</h3>
+<p class="ne">БМЗ заключил долгосрочные контракты на поставку металлокорда и бесшовных труб в страны Европейского союза.</p>
+</div>
+</div>
+<div class="nc aos d3">
+<div class="ni"><img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/738c48a3a021769e08a189b69f442a0ebe51e384.jpg" alt="Металлокорд БМЗ"><div class="nd">10 марта 2026</div></div>
+<div class="nct">
+<div class="ntg">Награды</div>
+<h3 class="nt">Премия за экологические инициативы</h3>
+<p class="ne">БМЗ получил национальную премию в области экологической безопасности за проект по снижению выбросов CO₂.</p>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+<!-- ========== CERTIFICATES ========== -->
+<section class="sec cert-section">
+<div class="c">
+<h2 class="st aos">Сертификаты и стандарты</h2>
+<p class="ss aos d1">Международное признание качества продукции БМЗ</p>
+<div class="cert-grid">
+<div class="cert-card aos d1">
+<div class="cert-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+<h3 class="cert-title">ISO 9001</h3>
+<p class="cert-desc">Система менеджмента качества. Сертификация международного уровня.</p>
+<span class="cert-year">С 2003 года</span>
+</div>
+<div class="cert-card aos d2">
+<div class="cert-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+<h3 class="cert-title">ISO 14001</h3>
+<p class="cert-desc">Экологический менеджмент. Ответственное производство.</p>
+<span class="cert-year">С 2008 года</span>
+</div>
+<div class="cert-card aos d3">
+<div class="cert-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+<h3 class="cert-title">ISO 45001</h3>
+<p class="cert-desc">Охрана труда и безопасность. Забота о сотрудниках.</p>
+<span class="cert-year">С 2019 года</span>
+</div>
+<div class="cert-card aos d4">
+<div class="cert-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<h3 class="cert-title">API 5L / 5CT</h3>
+<p class="cert-desc">Стандарт нефтегазовых труб. Допуск к поставкам в отрасль.</p>
+<span class="cert-year">С 2010 года</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== EXPORT MAP ========== -->
+<section class="export-section">
+<div class="c">
+<div class="export-grid">
+<div class="export-map aos">
+<div style="position:relative;z-index:2;text-align:center;color:var(--w)">
+<svg width="80" height="80" viewBox="0 0 24 24" stroke="rgba(255,255,255,.5)" fill="none" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+<p style="font-family:var(--f2);font-size:1.4rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;margin-top:16px">География поставок</p>
+<p style="font-size:.9rem;opacity:.7;margin-top:8px">50+ стран мира</p>
+</div>
+</div>
+<div class="export-content aos d1">
+<h2>Экспортные рынки</h2>
+<p>Продукция БМЗ поставляется более чем в 50 стран мира. Ключевые рынки — страны Европейского союза, СНГ, Ближний Восток, Северная и Южная Америка, Юго-Восточная Азия.</p>
+<div class="export-stats">
+<div class="export-stat">
+<span class="export-stat-number">70%</span>
+<div class="export-stat-label">Доля экспорта</div>
+</div>
+<div class="export-stat">
+<span class="export-stat-number">50+</span>
+<div class="export-stat-label">Стран-партнёров</div>
+</div>
+<div class="export-stat">
+<span class="export-stat-number">25</span>
+<div class="export-stat-label">Лет на мировом рынке</div>
+</div>
+<div class="export-stat">
+<span class="export-stat-number">1200+</span>
+<div class="export-stat-label">Контрагентов</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== QUALITY CONTROL ========== -->
+<section class="sec quality-section">
+<div class="c">
+<h2 class="st aos">Контроль качества</h2>
+<p class="ss aos d1">Многоуровневая система проверки продукции на всех этапах производства</p>
+<div class="quality-grid">
+<div class="quality-card aos d1">
+<div class="quality-num">01</div>
+<h3 class="quality-title">Входной контроль</h3>
+<p class="quality-desc">Проверка металлолома и сырья перед плавкой. Спектральный анализ состава.</p>
+<ul class="quality-list">
+<li>Химический анализ</li>
+<li>Радиационный контроль</li>
+<li>Сортировка по маркам</li>
+</ul>
+</div>
+<div class="quality-card aos d2">
+<div class="quality-num">02</div>
+<h3 class="quality-title">Производственный контроль</h3>
+<p class="quality-desc">Мониторинг параметров плавки, прокатки и термообработки в реальном времени.</p>
+<ul class="quality-list">
+<li>Температурный мониторинг</li>
+<li>Автоматизированные системы</li>
+<li>Статистический контроль</li>
+</ul>
+</div>
+<div class="quality-card aos d3">
+<div class="quality-num">03</div>
+<h3 class="quality-title">Выходной контроль</h3>
+<p class="quality-desc">Финальная проверка готовой продукции перед отгрузкой заказчику.</p>
+<ul class="quality-list">
+<li>Ультразвуковой контроль</li>
+<li>Механические испытания</li>
+<li>Металлографический анализ</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== SUSTAINABILITY ========== -->
+<section class="sec sustain-section">
+<div class="c">
+<h2 class="st aos">Экологическая ответственность</h2>
+<p class="ss aos d1">Стратегия устойчивого развития и забота об окружающей среде</p>
+<div class="sustain-grid">
+<div class="sustain-card aos d1">
+<div class="sustain-icon"><svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+<h3 class="sustain-title">Водооборот</h3>
+<p class="sustain-desc">Замкнутый цикл водопользования. Очистка и повторное использование промышленных вод.</p>
+<div class="sustain-num">95%</div>
+</div>
+<div class="sustain-card aos d2">
+<div class="sustain-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+<h3 class="sustain-title">Отходы</h3>
+<p class="sustain-desc">Переработка металлических и неметаллических отходов. Вторичное использование шлаков.</p>
+<div class="sustain-num">80%</div>
+</div>
+<div class="sustain-card aos d3">
+<div class="sustain-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+<h3 class="sustain-title">Энергоэффективность</h3>
+<p class="sustain-desc">Модернизация оборудования для снижения энергопотребления на тонну продукции.</p>
+<div class="sustain-num">-15%</div>
+</div>
+<div class="sustain-card aos d4">
+<div class="sustain-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+<h3 class="sustain-title">Выбросы CO₂</h3>
+<p class="sustain-desc">Снижение углеродного следа. Модернизация фильтров и систем очистки газов.</p>
+<div class="sustain-num">-20%</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== PARTNERS ========== -->
+<section class="sec partners-section">
+<div class="c">
+<h2 class="st aos">Партнёры и клиенты</h2>
+<p class="ss aos d1">Ведущие мировые компании выбирают продукцию БМЗ</p>
+<div class="partners-grid">
+<div class="partner-item aos d1"><span>Continental</span></div>
+<div class="partner-item aos d2"><span>Michelin</span></div>
+<div class="partner-item aos d3"><span>Bridgestone</span></div>
+<div class="partner-item aos d4"><span>Gazprom</span></div>
+<div class="partner-item aos d1"><span>Lukoil</span></div>
+<div class="partner-item aos d2"><span>Transneft</span></div>
+</div>
+</div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section class="sec testimonials-section">
+<div class="c">
+<h2 class="st aos">Отзывы партнёров</h2>
+<p class="ss aos d1">Что говорят о сотрудничестве с БМЗ</p>
+<div class="testimonials-grid">
+<div class="testimonial-card aos d1">
+<p class="testimonial-text">Металлокорд БМЗ соответствует самым высоким стандартам качества. Надёжный поставщик с безупречной репутацией на протяжении многих лет.</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">КШ</div>
+<div class="testimonial-info">
+<h4>Карл Шмидт</h4>
+<p>Continental AG, Германия</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card aos d2">
+<p class="testimonial-text">Бесшовные трубы БМЗ успешно прошли все испытания для использования на наших объектах. Качество продукции на уровне ведущих европейских производителей.</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">АП</div>
+<div class="testimonial-info">
+<h4>Алексей Петров</h4>
+<p>Газпром Нефть, Россия</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card aos d3">
+<p class="testimonial-text">Сотрудничество с БМЗ — это гарантия стабильных поставок и высокого качества. Гибкий подход к требованиям заказчика и оперативная логистика.</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">МЛ</div>
+<div class="testimonial-info">
+<h4>Мария Лебедева</h4>
+<p>Белarusian Steel Works, Беларусь</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== AWARDS ========== -->
+<section class="sec awards-section">
+<div class="c">
+<h2 class="st aos">Награды и достижения</h2>
+<p class="ss aos d1">Признание качества и вклада в развитие промышленности</p>
+<div class="awards-grid">
+<div class="award-card aos d1">
+<div class="award-year">2024</div>
+<h3 class="award-title">Лидер отрасли</h3>
+<p class="award-desc">Премия «Лидер металлургической отрасли» за вклад в развитие сталелитейной промышленности.</p>
+<span class="award-org">Минпром Беларуси</span>
+</div>
+<div class="award-card aos d2">
+<div class="award-year">2023</div>
+<h3 class="award-title">Экологическая премия</h3>
+<p class="award-desc">Национальная премия за проект по снижению выбросов CO₂ на 20%.</p>
+<span class="award-org">Минприроды РБ</span>
+</div>
+<div class="award-card aos d3">
+<div class="award-year">2022</div>
+<h3 class="award-title">Экспортёр года</h3>
+<p class="award-desc">Признание лучшим экспортёром в категории промышленных товаров.</p>
+<span class="award-org">БЕЛТПП</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== CAREER ========== -->
+<section class="career-section">
+<div class="c">
+<div class="career-grid">
+<div class="career-content aos">
+<h2>Карьера в БМЗ</h2>
+<p>БМЗ — это команда из 8500 профессионалов. Мы предлагаем стабильную работу, конкурентную зарплату, возможности для обучения и карьерного роста в крупнейшем металлургическом холдинге страны.</p>
+<div class="career-benefits">
+<div class="career-benefit">
+<svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+<span>Официальное трудоустройство</span>
+</div>
+<div class="career-benefit">
+<svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+<span>Конкурентная зарплата</span>
+</div>
+<div class="career-benefit">
+<svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+<span>Обучение и развитие</span>
+</div>
+<div class="career-benefit">
+<svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+<span>Медицинское страхование</span>
+</div>
+</div>
+<div style="margin-top:32px">
+<button class="btn btn-p" onclick="nav('contacts')">Отправить резюме</button>
+</div>
+</div>
+<div class="career-image aos d1">
+<img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/2d1bb19889d8f1b13a5571e24a045ef060aaebd0.jpg" alt="Коллектив БМЗ" style="width:100%;height:100%;object-fit:cover">
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="sec faq-section">
+<div class="c">
+<h2 class="st aos">Часто задаваемые вопросы</h2>
+<p class="ss aos d1">Ответы на популярные вопросы о продукции и сотрудничестве</p>
+<div class="faq-item aos d1">
+<button class="faq-question" onclick="this.parentElement.classList.toggle('a')">
+Какие минимальные объёмы закупки?
+<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+</button>
+<div class="faq-answer">
+<p>Минимальный объём заказа зависит от типа продукции. Для сортового проката — от 20 тонн, для металлокорда — от 5 тонн, для бесшовных труб — от 10 тонн. Индивидуальные условия обсуждаются для крупных контрактов.</p>
+</div>
+</div>
+<div class="faq-item aos d2">
+<button class="faq-question" onclick="this.parentElement.classList.toggle('a')">
+Какие сроки производства и доставки?
+<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+</button>
+<div class="faq-answer">
+<p>Срок производства стандартной продукции — 2–4 недели. Индивидуальные заказы — до 8 недель. Доставка осуществляется железнодорожным и автомобильным транспортом по всей территории СНГ и Европе.</p>
+</div>
+</div>
+<div class="faq-item aos d3">
+<button class="faq-question" onclick="this.parentElement.classList.toggle('a')">
+Предоставляете ли вы сертификаты качества?
+<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+</button>
+<div class="faq-answer">
+<p>Да, каждая партия продукции сопровождается полным пакетом документов: сертификат качества, паспорт, результаты лабораторных испытаний. По запросу предоставляем дополнительные протоколы испытаний.</p>
+</div>
+</div>
+<div class="faq-item aos d4">
+<button class="faq-question" onclick="this.parentElement.classList.toggle('a')">
+Работаете ли вы с экспортными контрактами?
+<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+</button>
+<div class="faq-answer">
+<p>Да, экспорт составляет более 70% нашей продукции. Мы работаем по Incoterms 2020, предоставляем все необходимые экспортные документы. Опыт поставок в 50+ стран мира.</p>
+</div>
+</div>
+<div class="faq-item aos d5">
+<button class="faq-question" onclick="this.parentElement.classList.toggle('a')">
+Есть ли у вас система скидок для постоянных клиентов?
+<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+</button>
+<div class="faq-answer">
+<p>Да, для постоянных партнёров действует гибкая система лояльности: специальные цены при годовых контрактах, отсрочка платежа, приоритет в производственном планировании.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== VIDEO SECTION ========== -->
+<section class="video-section">
+<div class="c">
+<div class="video-grid">
+<div class="video-container aos" style="position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:4px;background:var(--c1)">
+<iframe 
+    src="https://www.youtube.com/embed/nPTM7ZSEgz4?rel=0&modestbranding=1&enablejsapi=1" 
+    title="Белорусский металлургический завод. БМЗ."
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen
+    loading="lazy">
+</iframe>
+</div>
+<div class="video-content aos d1">
+<h2>БМЗ: 40 лет лидерства</h2>
+<p>Посмотрите, как работает один из крупнейших металлургических заводов Восточной Европы. Современные технологии, профессиональный коллектив, продукция мирового класса.</p>
+<div class="video-stats">
+<div class="video-stat">
+<div class="video-stat-num">2.5 млн</div>
+<div class="video-stat-label">Тонн стали в год</div>
+</div>
+<div class="video-stat">
+<div class="video-stat-num">8500</div>
+<div class="video-stat-label">Сотрудников</div>
+</div>
+<div class="video-stat">
+<div class="video-stat-num">4</div>
+<div class="video-stat-label">Производственных передела</div>
+</div>
+</div>
+<div style="margin-top:32px">
+<a href="https://www.youtube.com/@BMZ_LIFE84/videos" target="_blank" class="btn" style="color:var(--w);border-color:rgba(255,255,255,.3)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+Все видео БМЗ на YouTube
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+
+<!-- ==================== ABOUT PAGE ==================== -->
+<div class="pg" id="pg-about">
+<section class="abh">
+<div class="c">
+<div class="abc">
+<h1>О заводе</h1>
+<p>Белорусский металлургический завод — управляющая компания холдинга «Белорусская металлургическая компания». История, миссия и ценности предприятия.</p>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="c">
+<h2 class="st aos">История развития</h2>
+<p class="ss aos d1">Ключевые вехи становления БМЗ с 1981 года</p>
+<div class="tl">
+<div class="ti aos">
+<div class="tc">
+<div class="ty">1981</div>
+<div class="tt">Решение о строительстве</div>
+<div class="tds">Постановление Совета Министров СССР о строительстве Белорусского металлургического завода в г. Жлобине. Проект разработал Укргипромез.</div>
+</div>
+<div class="td"></div>
+</div>
+<div class="ti aos">
+<div class="tc">
+<div class="ty">1984</div>
+<div class="tt">Первая плавка стали</div>
+<div class="tds">15 октября 1984 года состоялась первая историческая плавка стали в электросталеплавильном цехе №1 совместно с австрийскими коллегами из «Фест-Альпине».</div>
+</div>
+<div class="td"></div>
+</div>
+<div class="ti aos">
+<div class="tc">
+<div class="ty">1987</div>
+<div class="tt">Запуск металлокорда</div>
+<div class="tds">Официальная сдача в эксплуатацию комплекса по производству металлокорда — уникальное для мировой практики решение по технологии и средствам управления.</div>
+</div>
+<div class="td"></div>
+</div>
+<div class="ti aos">
+<div class="tc">
+<div class="ty">1991</div>
+<div class="tt">Третья очередь строительства</div>
+<div class="tds">Ввод в эксплуатацию ДСП-3 с эркерным выпуском, реконструкция стана 850, сталепроволочный цех №2. Производственная мощность выросла до 1,5 млн тонн.</div>
+</div>
+<div class="td"></div>
+</div>
+<div class="ti aos">
+<div class="tc">
+<div class="ty">2007</div>
+<div class="tt">Трубопрокатный цех</div>
+<div class="tds">Введение в строй трубопрокатного цеха, позволившего решить вопрос импортозамещения трубной продукции для нефтегазовой отрасли. Мощность — 250 тыс. тонн в год.</div>
+</div>
+<div class="td"></div>
+</div>
+<div class="ti aos">
+<div class="tc">
+<div class="ty">2012</div>
+<div class="tt">Управляющая компания холдинга</div>
+<div class="tds">БМЗ определён головным предприятием холдинга «Белорусская металлургическая компания». Реорганизация в ОАО «БМЗ — УК холдинга «БМК».</div>
+</div>
+<div class="td"></div>
+</div>
+<div class="ti aos">
+<div class="tc">
+<div class="ty">2015</div>
+<div class="tt">Новый сортопрокатный цех</div>
+<div class="tds">Запуск сортопрокатного цеха №2 мощностью 700 тыс. тонн в год. Освоены новые сорта проката и катанки диаметром 5,5–22 мм.</div>
+</div>
+<div class="td"></div>
+</div>
+<div class="ti aos">
+<div class="tc">
+<div class="ty">2024</div>
+<div class="tt">Современный этап развития</div>
+<div class="tds">Завод продолжает модернизацию производства, внедряет цифровые технологии и расширяет экспортные рынки сбыта. Производство более 2,5 млн тонн стали в год.</div>
+</div>
+<div class="td"></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="ms">
+<div class="c">
+<div class="mg">
+<div class="mi"><img src="https://kimi-web-img.moonshot.cn/img/tnp.belsteel.com/19be3f556a5e931bff9d1899451e18f740fb1033.jpg" alt="Панорама БМЗ Жлобин"></div>
+<div class="mc">
+<h2>Миссия и ценности</h2>
+<p>БМЗ — это не просто завод, это символ промышленной мощи Беларуси. Наша миссия — производить сталь высшего качества, укрепляя экономику страны и обеспечивая занятость тысяч людей.</p>
+<p>Мы верим, что промышленность — основа процветания. Каждая тонна стали, произведённая на нашем заводе, — это вклад в будущее. Продукция БМЗ использовалась при строительстве Национальной библиотеки Беларуси, Москва-Сити, олимпийских объектов в Лондоне и Сочи.</p>
+<div class="mv">
+<div class="vi">
+<div class="vic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+<div class="vt"><h4>Качество</h4><p>Непрерывное совершенствование продукции</p></div>
+</div>
+<div class="vi">
+<div class="vic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="vt"><h4>Инновации</h4><p>Внедрение передовых технологий</p></div>
+</div>
+<div class="vi">
+<div class="vic"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+<div class="vt"><h4>Люди</h4><p>Забота о сотрудниках и их развитие</p></div>
+</div>
+<div class="vi">
+<div class="vic"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+<div class="vt"><h4>Экология</h4><p>Ответственное отношение к природе</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== DOCUMENTARY VIDEO ========== -->
+<section class="sec" style="background:var(--bg)">
+<div class="c">
+<h2 class="st aos">Документальный фильм</h2>
+<p class="ss aos d1">Флагманы белорусской экономики — Белорусский металлургический завод</p>
+<div class="video-container aos" style="position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:4px;box-shadow:var(--s3);background:var(--c1)">
+<iframe 
+    src="https://www.youtube.com/embed/nPTM7ZSEgz4?rel=0&modestbranding=1&start=0&enablejsapi=1" 
+    title="Белорусский металлургический завод. БМЗ."
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen
+    loading="lazy">
+</iframe>
+</div>
+<p style="margin-top:24px;color:var(--c2);font-size:.95rem;line-height:1.7">Жлобин — сердце металлургии Беларуси. Здесь производят сталь, которая строит будущее. Белорусский металл использовали при строительстве Национальной библиотеки и БелАЭС, международного делового центра «Москва-Сити» и на олимпийских стройках в Лондоне и Сочи. Сегодня БМЗ — символ независимой Беларуси.</p>
+</div>
+</section>
+</div>
+
+<!-- ==================== PRODUCTION PAGE ==================== -->
+<div class="pg" id="pg-production">
+<section class="prh">
+<div class="c">
+<h1>Производство</h1>
+<p>Четыре металлургических передела: сталеплавильное, прокатное, трубное и метизное производство. Полный цикл от металлолома до готовой продукции мирового класса.</p>
+</div>
+</section>
+<section class="sec ps">
+<div class="c">
+<h2 class="st aos">Виды продукции</h2>
+<p class="ss aos d1">Широкий ассортимент металлопродукции для строительства, машиностроения, автомобилестроения и нефтегазовой отрасли</p>
+<div class="pg2">
+<div class="pc aos d1">
+<div class="pi"><img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/2d1bb19889d8f1b13a5571e24a045ef060aaebd0.jpg" alt="Сталеплавильное производство БМЗ"></div>
+<div class="pinf">
+<div class="ptg">Сортовой прокат</div>
+<h3 class="pt">Сортовой и фасонный прокат</h3>
+<p class="pd">Круглый прокат диаметром 20–150 мм, квадратная заготовка, арматура периодического профиля. Применяется в строительстве и машиностроении.</p>
+<div class="psp">
+<span class="psp2">Ø 20–150 мм</span>
+<span class="psp2">ГОСТ 2590</span>
+<span class="psp2">ASTM A29</span>
+</div>
+</div>
+</div>
+<div class="pc aos d2">
+<div class="pi"><img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/9ec790e2377c13329f7f2a36cd2191cc7166b881.jpg" alt="Бесшовные трубы БМЗ"></div>
+<div class="pinf">
+<div class="ptg">Трубная продукция</div>
+<h3 class="pt">Бесшовные трубы</h3>
+<p class="pd">Трубы нефтегазового сортамента по стандартам API 5L и API 5CT. Импортозамещение для нефтегазовой промышленности. Диаметр 60–245 мм.</p>
+<div class="psp">
+<span class="psp2">Ø 60–245 мм</span>
+<span class="psp2">API 5L/5CT</span>
+<span class="psp2">EN 10216</span>
+</div>
+</div>
+</div>
+<div class="pc aos d1">
+<div class="pi"><img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/738c48a3a021769e08a189b69f442a0ebe51e384.jpg" alt="Металлокорд БМЗ"></div>
+<div class="pinf">
+<div class="ptg">Метизное производство</div>
+<h3 class="pt">Металлокорд</h3>
+<p class="pd">Металлокорд для автомобильных шин, включая крупногабаритные и сверхкрупногабаритные шины. Ультравысокопрочные конструкции из катанки.</p>
+<div class="psp">
+<span class="psp2">0,20–0,50 мм</span>
+<span class="psp2">ASTM A1070</span>
+<span class="psp2">EN 10264</span>
+</div>
+</div>
+</div>
+<div class="pc aos d2">
+<div class="pi"><img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/1b91da4d20f405554c29ea3b6e2125a6cb24dcb9.jpg" alt="Катанка БМЗ"></div>
+<div class="pinf">
+<div class="ptg">Катанка и проволока</div>
+<h3 class="pt">Катанка и стальная проволока</h3>
+<p class="pd">Катанка диаметром 5,0–22 мм, проволока общего назначения, пружинная, гвоздевая, арматурная. Стальная фибра для армирования бетона.</p>
+<div class="psp">
+<span class="psp2">Ø 5,0–22 мм</span>
+<span class="psp2">ГОСТ 30136</span>
+<span class="psp2">EN 10016</span>
+</div>
+</div>
+</div>
+<div class="pc aos d1">
+<div class="pi"><img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/3bd464f20161b29b70ec994d1ea81ff3f4a05098.jpg" alt="НЛЗ БМЗ"></div>
+<div class="pinf">
+<div class="ptg">Непрерывнолитая заготовка</div>
+<h3 class="pt">НЛЗ квадратного сечения</h3>
+<p class="pd">Непрерывнолитая заготовка сечением 125×125, 140×140, 250×300 и 300×400 мм. Производительность МНЛЗ до 1,2 млн тонн в год.</p>
+<div class="psp">
+<span class="psp2">125×125 – 300×400</span>
+<span class="psp2">ГОСТ 25518</span>
+<span class="psp2">EN 10029</span>
+</div>
+</div>
+</div>
+<div class="pc aos d2">
+<div class="pi"><img src="https://kimi-web-img.moonshot.cn/img/www.bmzm.ru/2eb6cccdb2e606cde8d5450421db39c14a72345f.png" alt="Бортовая проволока БМЗ"></div>
+<div class="pinf">
+<div class="ptg">Специальная продукция</div>
+<h3 class="pt">Бортовая и бронзированная проволока</h3>
+<p class="pd">Бортовая латунированная и бронзированная проволока для шинной промышленности. Проволока для армирования рукавов высокого давления (РМЛ).</p>
+<div class="psp">
+<span class="psp2">Ø 1,50–2,50 мм</span>
+<span class="psp2">ASTM B197</span>
+<span class="psp2">EN 10264-3</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec ts">
+<div class="c">
+<h2 class="st aos">Технологические процессы</h2>
+<p class="ss aos d1">Современное оборудование ведущих мировых производителей</p>
+<div class="tg2">
+<div class="tcard aos d1">
+<div class="tn">01</div>
+<h3 class="tt2">Сталеплавильное производство</h3>
+<p class="tds2">Три дуговые сталеплавильные печи (ДСП-1, ДСП-2, ДСП-3) с установками внепечной обработки и вакуумной дегазации. Производительность до 1 млн тонн стали в год на каждой печи.</p>
+</div>
+<div class="tcard aos d2">
+<div class="tn">02</div>
+<h3 class="tt2">Машины непрерывного литья</h3>
+<p class="tds2">Три машины непрерывного литья заготовок (МНЛЗ-1, МНЛЗ-2, МНЛЗ-3) с системами электромагнитного перемешивания. Заготовка сечением 125×125 до 300×400 мм.</p>
+</div>
+<div class="tcard aos d3">
+<div class="tn">03</div>
+<h3 class="tt2">Прокатное производство</h3>
+<p class="tds2">Стан 320/150, реверсивный стан 850, проволочный стан 150, сортопрокатный цех №2. Современные линии термообработки и контроля качества.</p>
+</div>
+<div class="tcard aos d4">
+<div class="tn">04</div>
+<h3 class="tt2">Трубопрокатный цех</h3>
+<p class="tds2">Производство бесшовных труб нефтегазового сортамента. Линии отделки труб по стандартам API. Производительность 250 тыс. тонн в год.</p>
+</div>
+<div class="tcard aos d1">
+<div class="tn">05</div>
+<h3 class="tt2">Метизное производство</h3>
+<p class="tds2">Сталепроволочные цеха №1, №2 и №3. Агрегаты латунирования, бронзирования, патентирования. Канатные машины, волочильные станы, производство стальной фибры.</p>
+</div>
+<div class="tcard aos d2">
+<div class="tn">06</div>
+<h3 class="tt2">Лабораторный контроль</h3>
+<p class="tds2">Современные физико-механические, химические и металлографические лаборатории. Спектральный анализ, ультразвуковой и вихретоковый контроль.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- ==================== GALLERY PAGE ==================== -->
+<div class="pg" id="pg-gallery">
+<section class="gah">
+<div class="c">
+<h1>Галерея</h1>
+<p>Фотографии производственных мощностей, продукции и жизни коллектива БМЗ</p>
+</div>
+</section>
+<section class="sec">
+<div class="c">
+<h2 class="st aos">Фотогалерея предприятия</h2>
+<p class="ss aos d1">Визуальная история завода и его продукции</p>
+<div class="gf">
+<button class="fb a" data-f="all" onclick="filterGallery('all')">Все</button>
+<button class="fb" data-f="production" onclick="filterGallery('production')">Производство</button>
+<button class="fb" data-f="products" onclick="filterGallery('products')">Продукция</button>
+<button class="fb" data-f="team" onclick="filterGallery('team')">Коллектив</button>
+</div>
+<div class="gg" id="galleryGrid">
+<div class="gi w aos" data-cat="production" onclick="openLightbox(0)">
+<img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/3bd464f20161b29b70ec994d1ea81ff3f4a05098.jpg" alt="Сталеплавильное производство БМЗ">
+<div class="go">
+<div class="gc2">Производство</div>
+<div class="gt">Электросталеплавильный цех</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi aos" data-cat="products" onclick="openLightbox(1)">
+<img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/1b91da4d20f405554c29ea3b6e2125a6cb24dcb9.jpg" alt="Сортовой прокат БМЗ">
+<div class="go">
+<div class="gc2">Продукция</div>
+<div class="gt">Сортовой прокат</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi t aos" data-cat="production" onclick="openLightbox(2)">
+<img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/2d1bb19889d8f1b13a5571e24a045ef060aaebd0.jpg" alt="Производство стали БМЗ">
+<div class="go">
+<div class="gc2">Производство</div>
+<div class="gt">Машина непрерывного литья</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi aos" data-cat="products" onclick="openLightbox(3)">
+<img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/9ec790e2377c13329f7f2a36cd2191cc7166b881.jpg" alt="Бесшовные трубы БМЗ">
+<div class="go">
+<div class="gc2">Продукция</div>
+<div class="gt">Бесшовные трубы</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi w aos" data-cat="team" onclick="openLightbox(4)">
+<img src="https://kimi-web-img.moonshot.cn/img/hardhub.ru/dfd3815d4661ed58b0b5298e0399d7415b904d4f.jpg" alt="БМЗ Жлобин вид на завод">
+<div class="go">
+<div class="gc2">Коллектив</div>
+<div class="gt">Вид на завод с высоты</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi aos" data-cat="production" onclick="openLightbox(5)">
+<img src="https://kimi-web-img.moonshot.cn/img/avatars.mds.yandex.net/ea0284dd942a76adbab34ed04d3b20f6d740dc55" alt="Трубопрокатный цех БМЗ">
+<div class="go">
+<div class="gc2">Производство</div>
+<div class="gt">Трубопрокатный цех</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi aos" data-cat="products" onclick="openLightbox(6)">
+<img src="https://kimi-web-img.moonshot.cn/img/belsteel.com/738c48a3a021769e08a189b69f442a0ebe51e384.jpg" alt="Металлокорд БМЗ">
+<div class="go">
+<div class="gc2">Продукция</div>
+<div class="gt">Металлокорд</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi aos" data-cat="team" onclick="openLightbox(7)">
+<img src="https://kimi-web-img.moonshot.cn/img/tnp.belsteel.com/19be3f556a5e931bff9d1899451e18f740fb1033.jpg" alt="Панорама БМЗ Жлобин">
+<div class="go">
+<div class="gc2">Коллектив</div>
+<div class="gt">Панорама завода</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+<div class="gi aos" data-cat="production" onclick="openLightbox(8)">
+<img src="https://kimi-web-img.moonshot.cn/img/vivascale.by/4c07c0c78264ca7dc3410c9586dc0318b55112e9.jpg" alt="Макет БМЗ Жлобин">
+<div class="go">
+<div class="gc2">Производство</div>
+<div class="gt">Макет завода 1:1000</div>
+</div>
+<div class="gic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="ftr">
+<div class="c">
+<div class="fg3">
+<div class="fbi">
+<a href="index.html" class="logo">
+<img src="logo.svg" alt="БМЗ Логотип" class="logo-img">
+<div class="lt">Белорусский металлургический завод<span>Управляющая компания холдинга «БМК»</span></div>
+</a>
+<p class="fds">Одно из крупнейших металлургических предприятий Восточной Европы. Производство стали, проката, труб и метизной продукции с 1984 года.</p>
+</div>
+<div>
+<h4 class="ft3">Навигация</h4>
+<ul class="fls">
+<li><a href="index.html">Главная</a></li>
+<li><a href="about.html">О заводе</a></li>
+<li><a href="production.html">Производство</a></li>
+<li><a href="gallery.html">Галерея</a></li>
+<li><a href="contacts.html">Контакты</a></li>
+</ul>
+</div>
+<div>
+<h4 class="ft3">Продукция</h4>
+<ul class="fls">
+<li><a href="production.html">Сортовой прокат</a></li>
+<li><a href="production.html">Бесшовные трубы</a></li>
+<li><a href="production.html">Металлокорд</a></li>
+<li><a href="production.html">Катанка</a></li>
+<li><a href="production.html">Стальная фибра</a></li>
+</ul>
+</div>
+<div>
+<h4 class="ft3">Контакты</h4>
+<div class="fcp">
+<p><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>г. Жлобин, ул. Промышленная, 37</p>
+<p><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+375 (2334) 2-29-93</p>
+<p><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@belsteel.com</p>
+</div>
+</div>
+</div>
+<div class="fbt">
+<p class="fcpy">© 2026 ОАО «БМЗ — управляющая компания холдинга «БМК». Все права защищены.</p>
+<div class="fsoc">
+<a href="#" class="soc" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+<a href="#" class="soc" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+<a href="#" class="soc" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<button class="stp" id="scrollTop" onclick="scrollToTop()">
+<svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
